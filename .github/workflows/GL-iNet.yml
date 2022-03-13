@@ -39,8 +39,8 @@ jobs:
         sudo -E apt-get -qq clean
         sudo apt install -y build-essential libncurses5-dev gawk git libssl-dev gettext zlib1g-dev swig unzip time rsync python3 python3-setuptools python3-yaml
         sudo timedatectl set-timezone "$TZ"
-        git config --global user.email "240038901@qq.com"
-        git config --global user.name "monw"
+        #git config --global user.email "240038901@qq.com"
+        #git config --global user.name "monw"
 
     - name: Clone source code and building rom
       run: |

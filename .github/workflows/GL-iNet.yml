@@ -12,8 +12,7 @@ on:
         default: 'false'
 
 env:
-  #REPO_URL: https://github.com/monw/gl-infra-builder ##可以改成自己的仓库
-  REPO_URL: https://github.com/gl-inet/gl-infra-builder.git
+  REPO_URL: https://github.com/monw/gl-infra-builder ##可以改成自己的仓库
   REPO_BRANCH: stable
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true

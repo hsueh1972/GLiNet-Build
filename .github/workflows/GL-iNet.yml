@@ -12,7 +12,8 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/monw/gl-infra-builder ##可以改成自己的仓库
+  #REPO_URL: https://github.com/monw/gl-infra-builder ##可以改成自己的仓库
+  REPO_URL: https://github.com/gl-inet/gl-infra-builder.git
   REPO_BRANCH: main
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
@@ -45,7 +46,8 @@ jobs:
     - name: Clone source code and building rom
       run: |
         df -hT $PWD
-        git clone $REPO_URL -b $REPO_BRANCH
+        #git clone $REPO_URL -b $REPO_BRANCH
+        git clone $REPO_URL
         cd gl-infra-builder        
         #python3 setup.py -c config-wlan-ap.yml
         #cd wlan-ap/openwrt
